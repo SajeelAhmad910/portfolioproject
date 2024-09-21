@@ -91,3 +91,8 @@ header {
   height: 587.15px;
   border: 1px;
 }
+
+.full-width {
+  width: 100%;
+}
+
