@@ -92,7 +92,6 @@ header {
   border: 1px;
 }
 
-.full-width {
+#scan-percentage-bar {
   width: 100%;
 }
-
