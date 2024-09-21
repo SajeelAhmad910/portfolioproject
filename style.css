@@ -10,32 +10,32 @@ header {
   margin-top: 4px;
   margin-left: 12px;
 }
-#logo h1{
-  font-family: Poppins,sans-serif;
+#logo h1 {
+  font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
-  color: #6070FF;
+  color: #6070ff;
 }
-#ham{
+#ham {
   width: 40px;
   height: 40px;
   margin-right: 12px;
   margin-top: 4px;
 }
-#ham img{
+#ham img {
   padding: 8px;
 }
 #headline {
   width: 375px;
   height: 604px;
   top: 92px;
-  padding: 24px,24px;
+  padding: 24px , 24px;
   gap: 12px;
 }
-#ptext h1{
+#ptext h1 {
   width: 327px;
   margin-top: 90px;
   height: 150px;
@@ -50,7 +50,7 @@ header {
   position: relative;
   z-index: 2;
 }
-#stext h1{
+#stext h1 {
   width: 327px;
   height: 146px;
   margin-left: 20px;
@@ -61,27 +61,27 @@ header {
   text-align: left;
   color: #344563;
 }
-#sm h1{
+#sm h1 {
   width: 117px;
   height: 24px;
   margin-left: 20px;
   gap: 8px;
   font-family: poppins;
-  font-weight: 500px; 
+  font-weight: 500px;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
-#icons{
+#icons {
   margin-left: 20px;
   width: 170.17px;
   height: 20px;
 }
-#bg img{
+
+#bg img {
   position: absolute;
   top: 70px;
-  width: 100%;
-  z-index: 1; /* Set a lower z-index for the image */ 
+  z-index: 1;
   width: 375px;
   height: 587.15px;
   border: 1px;
