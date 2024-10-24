@@ -18,7 +18,7 @@
                 <h1>My Logo</h1>
             </div>
             <div id="ham">
-                <img src="Icon - Menu.png" alt="">
+                <img src="Icon - Menu.png" alt="menu icon">
 
             </div>
         </nav>
@@ -26,7 +26,7 @@
     <main>
         <section id="headline">
             <div id="bg">
-                <img src="header-shapes mobile@2x.svg" alt="background image">
+                <img src="header-shapes mobile.png" alt="background image">
             </div>
             <div id="introduction">
                 <h1>I am Sajeel Ahmad.
@@ -46,12 +46,146 @@
     <footer>
         <section id="connect">
             <h2>LET'S CONNECT</h2>
-
-            <div id="icons">
-                <img src="social media icons.png" alt="">
-            </div>
         </section>
+        <div id="icons">
+            <img src="social media icons.png" alt="">
+        </div>
     </footer>
+    <div id="work">
+        <div id="cardwork1">
+            <img src="Snapshoot Portfolio.png" alt="">
+            <div id="leftblock">
+                <div id="prtext">
+                    <h1>Tonic</h1>
+                    <ul>
+                        <li>Canopy</li>
+                        <li>Backend Dev</li>
+                        <li>2015</li>
+                    </ul>                   
+                </div>
+                <div class="primary-text" >
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                </div>
+                <div class="tags">
+                    <button class="btn1">HTML</button>
+                    <button class="btn2">CSS</button>
+                    <button class="btn3">JAVASCRIPT</button>
+                </div>
+                <div class="project-button">
+                    <button class="bigbtn">See Project</button>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div id="cardwork2">
+            <img src="Snapshoot Portfolio2.png" alt="">
+            <div id="leftblock">
+                <div id="prtext">
+                    <h1>Tonic</h1>
+                    <ul>
+                        <li>Canopy</li>
+                        <li>Backend Dev</li>
+                        <li>2015</li>
+                    </ul>                   
+                </div>
+                <div class="primary-text" >
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                </div>
+                <div class="tags">
+                    <button class="btn1">HTML</button>
+                    <button class="btn2">CSS</button>
+                    <button class="btn3">JAVASCRIPT</button>
+                </div>
+                <div class="project-button">
+                    <button class="bigbtn">See Project</button>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div id="cardwork3">
+            <img src="Snapshoot Portfolio 3.png" alt="">
+            <div id="leftblock">
+                <div id="prtext">
+                    <h1>Tonic</h1>
+                    <ul>
+                        <li>Canopy</li>
+                        <li>Backend Dev</li>
+                        <li>2015</li>
+                    </ul>                   
+                </div>
+                <div class="primary-text" >
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                </div>
+                <div class="tags">
+                    <button class="btn1">HTML</button>
+                    <button class="btn2">CSS</button>
+                    <button class="btn3">JAVASCRIPT</button>
+                </div>
+                <div class="project-button">
+                    <button class="bigbtn">See Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamMenu = document.getElementById("ham");
+            const navMenu = document.createElement("div");
+    
+            // Mobile menu styling
+            navMenu.id = "mobile-menu";
+            navMenu.style.display = "none";
+             navMenu.style.position = "fixed"; // To stay at the top when scrolling
+            navMenu.style.top = "0";
+            navMenu.style.left = "0";
+            navMenu.style.width = "375px";
+            navMenu.style.height = "604px"; // Full-screen mobile menu
+            navMenu.style.backgroundColor = "#6070FF";
+            navMenu.style.zIndex = "999"; // Make sure it's above all elements
+            navMenu.innerHTML = `
+                <div id="menu-content" style="padding: 20px; text-align: right;">
+                    <span id="close-btn" style="font-size: 30px; color:white; cursor: pointer;">&times;</span>
+                    <ul style="list-style: none;padding: 0; text-align: left; margin-top: 50px;">
+                        <li style="padding: 20px;font-size: 30px;  border-bottom: 1px solid #ccc;">
+                            <a href="#about" style="text-decoration: none; color: white;">Portfolio</a>
+                        </li>
+                        <li style="padding: 20px;font-size: 30px;border-bottom: 1px solid #ccc;">
+                            <a href="#connect" style="text-decoration: none; color: white;">About</a>
+                        </li>
+                        <li style="padding: 20px;font-size: 30px;">
+                            <a href="#portfolio" style="text-decoration: none; color: white;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            `;
+    
+            document.body.appendChild(navMenu);
+    
+            const closeBtn = document.getElementById("close-btn");
+    
+            // Show the menu when the hamburger icon is clicked
+            hamMenu.addEventListener("click", function () {
+                navMenu.style.display = "block";
+            });
+    
+            // Hide the menu when the close button is clicked
+            closeBtn.addEventListener("click", function () {
+                navMenu.style.display = "none";
+            });
+    
+            // Hide the menu and scroll to the section when a menu option is clicked
+            const menuLinks = navMenu.querySelectorAll("a");
+            menuLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navMenu.style.display = "none";
+                });
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
